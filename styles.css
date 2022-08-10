@@ -1,0 +1,920 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.header{
+    background: linear-gradient(rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.9)), url(IMG_7382.JPG);
+    color: white;
+    height: 100vh;    
+}
+
+.header .navigation{
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 60px;
+  margin: 0 auto;
+}
+
+.header .navigation h3{
+    font-size: 1.7rem;
+
+}
+
+.navigation ul{
+    display: flex;
+    list-style: none;
+}
+
+.navigation ul li{
+    list-style: none;
+    padding: 3px 5px;
+    margin: 0 10px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navigation ul li a:hover{ 
+    color:rgb(58, 167, 152);
+}
+
+.navigation ul li:hover{
+    border-bottom: 2px solid rgb(58, 167, 152);
+
+}
+
+.header .hero-section{
+  border: 1px solid coral;
+  margin-top: 100px;
+  padding: 5px 0 5px 90px;
+}
+
+.hero-section h1{
+    font-size: 4rem;
+}
+
+.hero-section h2{
+    border: 1px solid;
+}
+
+.hero-section a{
+    border: 1px solid;
+    text-decoration: none;
+     display: block;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 2px 10px 25px;
+    border-radius: 20px;
+    width: 130px;
+}
+
+.hero-section a:hover{
+    background-color: rgb(58, 167, 152);
+    color: white;
+}
+
+.About{
+    border: 1px solid;
+    height: 100vh;
+    color: white;
+    display: grid;
+    background-color: rgb(61, 59, 59);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.About img{
+    grid-column: 2 / span 2;
+     width: 400px;
+     margin: 27px 0;
+     height: 550px;
+}
+
+.About .description{
+    grid-column: 6 / span 5;
+    border: 1px solid;
+    margin-top: 90px;
+    height: 450px;
+}
+
+.About .description h1{
+    font-size: 3rem;
+}
+
+.About .description h5{
+    font-size: 1.4rem;
+    margin: 20px 0;
+}
+
+.About .description span{
+    color:rgb(58, 167, 152);
+}
+
+.About .description a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 26px;
+    padding: 10px 0 10px 15px;
+    width: 170px;
+    border-radius: 20px;
+    background-color: rgb(58, 167, 152);
+}
+
+.About .description p{
+    font-size: 0.9rem;
+    color:rgb(146, 138, 138)
+}
+
+.About .description p:first-of-type{
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+
+.Portfolio{
+    border: 1px solid;
+    height: 160vh;
+    color: white;
+    text-align: center;
+    background-color: rgb(36, 36, 36);
+}
+
+.Portfolio h1{
+    font-size: 3rem;
+    margin: 10px 0 20px 0;
+}
+
+.Portfolio p{
+    font-size: 0.9rem;
+    padding: 0 10px;
+    width: 60%;
+    margin: 10px auto;
+    color: rgb(146, 138, 138);
+}
+
+.Portfolio nav{
+    border: 1px solid;
+    margin: 30px 0;
+}
+
+.Portfolio nav ul{
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+}
+
+.Portfolio nav ul li{
+    margin: 0 10px;
+}
+
+.Portfolio .projects{
+    border: 1px solid;
+    display: grid;
+    gap: 3em;
+    width: 80%;
+    grid-template-columns: repeat(12, 1fr);
+    height: 500px;
+    margin: 20px auto;
+}
+
+.Portfolio .projects div{
+   width: 320px;
+   height: 300px;
+   border: 1px solid red;
+   grid-column: span 4;
+   margin: 3px 2px;
+   background-color: antiquewhite;
+}
+
+.Portfolio .projects div img{
+    width: 320px;
+   height: 250px;
+   margin-bottom: 10px;
+}
+
+.Portfolio .projects div a{
+    margin: 0px 10px;
+    border: 1px solid;
+    padding: 5px;
+    background-color: rgb(104, 121, 121);
+    color: white;
+    border-radius: 10px;;
+    text-decoration: none;
+    color: white;
+}
+
+
+.testimonials{
+    border: 1px solid;
+    text-align: center;
+    height: 100vh;
+    color: white;
+    background-color: rgb(61, 59, 59);
+}
+
+.testimonials h1{
+    font-size: 3rem;
+}
+
+.testimonials p{
+    color:rgb(146, 138, 138);
+}
+
+.reviews{
+    border: 1px solid;
+    display: flex;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.test-1, .test-2{
+   border: 1px solid;
+   margin: 0 20px;
+   padding: 10px 20px;
+   background-color: rgb(92, 88, 88);
+}
+
+.fa-star{
+    color: rgb(58, 167, 152)
+}
+
+.test-1 p, .test-2 p{
+   margin: 20px 0;
+   color: rgb(146, 138, 138);
+} 
+
+.profile{
+    display: flex;
+    margin: 10px 0; 
+}
+
+.profile img{
+    width: 70px;
+    height: 70px;
+    margin: 0 20px 0 0px;
+    border-radius: 35px;
+}
+
+.profile div{
+    margin-top: 20px;
+}
+
+.profile p{
+    margin: 0 0 0 0;
+    color: rgb(146, 138, 138);
+}
+
+.contact{
+   border: 1px solid;
+   text-align: center;
+   height: 130vh;
+   background-color: rgb(36, 36, 36);
+}
+
+.contact h1{
+    color: white;
+    font-size: 2.9rem;
+    padding: 10px 0;
+}
+
+.contact p{
+    color: rgb(146, 138, 138);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact .network{
+    border: 1px solid;
+    display: flex;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.network div{
+    width: 50%;
+    margin: 0 auto;
+    height: 200px;
+    border: 1px solid;
+}
+
+form{
+    border: 1px solid;
+    display: block;
+}
+
+form input{
+    border: 1px solid;
+    margin: 0 10px;
+    width: 320px;
+    background-color: rgb(71, 71, 71);
+    padding: 10px 20px 10px 5px;
+}
+
+form::placeholder{
+    color: rgb(146, 138, 138);
+}
+
+textarea{
+    border: 1px solid;
+    width: 665px;
+    background-color: rgb(71, 70, 70);
+    height:150px;
+    padding: 10px 0 0 0;
+}
+.submit{
+    border: 1px solid;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(58, 167, 152);
+}
+
+
+
+.footer{
+  display: flex;
+  margin-top: 75px;
+  justify-content: space-between;
+  padding: 0px 10px;
+  border: 1px solid;
+  height: 70px;
+  background-color: rgb(61, 59, 59);   
+}
+
+.footer p{
+    margin: 0 0 0 0;
+}
+
+@media (max-width: 1200px){
+    body{
+        background-color: white;
+    }
+
+    .header .navigation h3{
+        font-size: 1.7rem;
+    
+    }
+    
+    .navigation ul{
+        display: flex;
+        list-style: none;
+    }
+    
+    .navigation ul li{
+        list-style: none;
+        padding: 3px 5px;
+        margin: 0 10px;
+    }
+    
+    .navigation ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .navigation ul li a:hover{ 
+        color:rgb(58, 167, 152);
+    }
+    
+    .navigation ul li:hover{
+        border-bottom: 2px solid rgb(58, 167, 152);
+    
+    }
+    
+    .header .hero-section{
+      border: 1px solid coral;
+      margin-top: 100px;
+      padding: 5px 0 5px 90px;
+    }
+    
+    .hero-section h1{
+        font-size: 3rem;
+    }
+    
+    .hero-section h2{
+        border: 1px solid;
+    }
+    
+    .hero-section a{
+        border: 1px solid;
+        text-decoration: none;
+         display: block;
+        color: white;
+        margin-top: 10px;
+        padding: 10px 2px 10px 25px;
+        border-radius: 20px;
+        width: 130px;
+    }
+
+    .navigation ul li a{
+        color: black;
+    }
+
+    .Portfolio{
+        border: 1px solid;
+        height: 190vh;
+        color: white;
+        text-align: center;
+        background-color: rgb(36, 36, 36);
+    }
+    
+
+    
+.Portfolio .projects{
+    border: 1px solid;
+    display: grid;
+    gap: 3em;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    height: 500px;
+    margin: 20px auto;
+}
+
+.Portfolio .projects div{
+   width: 320px;
+   height: 300px;
+   background-color: antiquewhite;
+   grid-column:  span 6;
+   margin: 3px 62px;
+}
+
+.Portfolio .projects div img{
+    width: 320px;
+   height: 250px;
+}
+
+
+.testimonials{
+    border: 1px solid;
+    text-align: center;
+    height: 100vh;
+    margin-top: 150px;
+    background-color: rgb(61, 59, 59);
+   }
+
+   
+.About{
+    border: 1px solid;
+    height: 190vh;
+    color: white;
+    display: grid;
+    background-color: rgb(61, 59, 59);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.About img{
+    grid-column: 5 / span 7;
+     width: 400px;
+     margin: 27px 0;
+     height: 550px;
+}
+
+.About .description{
+    grid-column: 4 /span 6;
+    border: 1px solid;
+    margin-top: 90px;
+    height: 450px;
+    margin: 0 auto;
+    text-align: center;
+}
+.About .description a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 26px;
+    padding: 10px 0 10px 15px;
+    width: 170px;
+    margin: 26px auto 0 auto;
+    border-radius: 20px;
+    background-color: rgb(58, 167, 152);
+}
+
+}
+
+@media (max-width: 900px){
+
+    body{
+        background-color: aqua;
+    }
+
+    .About img{
+        grid-column: 4 / span 7;
+         width: 400px;
+         margin: 27px 0;
+         height: 550px;
+    }
+    
+
+
+    .Portfolio{
+        border: 1px solid;
+        height: 380vh;
+        color: white;
+        text-align: center;
+        background-color: rgb(36, 36, 36);
+    }
+    
+    .Portfolio .projects{
+        border: 1px solid;
+        display: grid;
+        gap: 3em;
+        width: 100%;
+        grid-template-columns: repeat(12, 1fr);
+        margin: 20px auto;
+    }
+    
+    .Portfolio .projects div{
+       width: 320px;
+       height: 270px;
+       background-color: white;
+       margin: 0 auto;
+       border: 1px solid red;
+       grid-column: 5/ span 12;
+       margin: 3px 2px;
+    }
+    
+    .Portfolio .projects div img{
+        width: 320px;
+       height: 230px;
+    }
+    
+    
+    .testimonials{
+        border: 1px solid;
+        text-align: center;
+        height: 100vh;
+        margin-top: 0px;
+        background-color: rgb(61, 59, 59);
+       }
+ 
+       
+.About .description a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 26px auto 0 auto;
+    margin-top: 26px;
+    padding: 10px 0 10px 15px;
+    width: 170px;
+    border-radius: 20px;
+    background-color: rgb(58, 167, 152);
+  }
+    
+}
+
+
+@media (max-width: 690px){
+    body{
+        background-color: white;
+    }
+
+    .header{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: 450px;
+    }
+     
+    .header{
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+.header .navigation{
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+    margin: 0 auto;
+  }
+  
+  .header .navigation h3{
+      font-size: 1.7rem;
+  
+  }
+  .navigation nav{
+    display:  none;
+  }
+
+  .navigation ul{
+      display: flex;
+      list-style: none;
+  }
+  
+  .navigation ul li{
+      list-style: none;
+      padding: 3px 5px;
+      margin: 0 10px;
+  }
+  
+  .navigation ul li a{
+      text-decoration: none;
+      color: white;
+  }
+  
+  .navigation ul li a:hover{ 
+      color:rgb(58, 167, 152);
+  }
+  
+  .navigation ul li:hover{
+      border-bottom: 2px solid rgb(58, 167, 152);
+  
+  }
+  
+  .header .hero-section{
+    border: 1px solid coral;
+    margin-top: 100px;
+    text-align: center;
+    padding: 5px 0 5px 0px;
+  }
+  
+  .hero-section h1{
+      font-size: 2.4rem;
+  }
+  
+  .hero-section h2{
+      border: 1px solid;
+      font-size: 1.4rem;
+  }
+  
+  .hero-section a{
+      border: 1px solid;
+      text-decoration: none;
+       display: block;
+      color: white;
+      margin-top: 10px;
+      padding: 10px 0px 10px 0px;
+      border-radius: 20px;
+      width: 130px;
+      margin: 10px auto 0 auto;;
+  }
+  
+  .hero-section a:hover{
+      background-color: rgb(58, 167, 152);
+      color: white;
+  }
+  
+  .About{
+      border: 1px solid;
+      height: 190vh;
+      color: white;
+      display: grid;
+      background-color: rgb(61, 59, 59);
+      grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .About img{
+      grid-column: 4 / span 12;
+       width: 300px;
+       margin: 27px 20px 27px 0;
+       height: 450px;
+  }
+  
+  .About .description{
+      grid-column: 3 / span 8;
+      border: 1px solid;
+      margin-top: 90px;
+      height: 400px;
+  }
+  
+  .About .description h1{
+      font-size: 2rem;
+  }
+  
+  .About .description h5{
+      font-size: 1rem;
+      margin: 20px 0;
+  }
+  
+  .About .description span{
+      color:rgb(58, 167, 152);
+  }
+  
+  .About .description a{
+      display: block;
+      text-decoration: none;
+      color: white;
+      margin-top: 26px;
+      padding: 10px 0 10px 15px;
+      width: 170px;
+      border-radius: 20px;
+      background-color: rgb(58, 167, 152);
+  }
+  
+  .About .description p{
+      font-size: 0.9rem;
+      color:rgb(146, 138, 138)
+  }
+  
+  .About .description p:first-of-type{
+      border: 1px solid;
+      margin-bottom: 20px;
+  }
+  
+  .Portfolio{
+      border: 1px solid;
+      height: 370vh;
+      color: white;
+      margin-top: 0px;
+      text-align: center;
+      background-color: rgb(36, 36, 36);
+  }
+  
+  .Portfolio h1{
+      font-size: 2.5rem;
+      margin: 10px 0 20px 0;
+  }
+  
+  .Portfolio p{
+      font-size: 0.9rem;
+      padding: 0 10px;
+      width: 60%;
+      margin: 10px auto;
+      color: rgb(146, 138, 138);
+  }
+  
+  .Portfolio nav{
+      border: 1px solid;
+      margin: 30px 0;
+  }
+  
+  .Portfolio nav ul{
+      display: flex;
+      border: 1px solid;
+      justify-content: center;
+  }
+  
+  .Portfolio nav ul li{
+      margin: 0 10px;
+  }
+  
+  .Portfolio .projects{
+      border: 1px solid;
+      display: grid;
+      gap: 3em;
+      width: 80%;
+      grid-template-columns: repeat(12, 1fr);
+      height: 500px;
+      margin: 20px auto;
+  }
+  
+  .Portfolio .projects div{
+     width: 280px;
+     height: 230px;
+     border: 1px solid red;
+     grid-column: 3 / span 10;
+     margin: 3px 2px;
+     background-color: antiquewhite;
+  }
+  
+  .Portfolio .projects div img{
+      width: 270px;
+     height: 200px;
+  }
+  
+  .Portfolio .projects div a{
+      margin: 0px 10px;
+      border: 1px solid;
+      padding: 5px;
+      background-color: rgb(104, 121, 121);
+      color: white;
+      border-radius: 20px;;
+      text-decoration: none;
+      color: white;
+  }
+  
+  
+  .testimonials{
+      border: 1px solid;
+      text-align: center;
+      height: 170vh;
+      color: white;
+      margin-top: 0px;
+      background-color: rgb(61, 59, 59);
+  }
+  
+  .testimonials h1{
+      font-size: 1.8rem;
+      padding: 10px 0;
+  }
+  
+  .reviews{
+      border: 1px solid;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      text-align: left;
+  }
+  
+  .test-1, .test-2{
+     border: 1px solid;
+     margin: 0 20px;
+     padding: 10px 20px;
+     background-color: rgb(92, 88, 88);
+  }
+  
+  .test-1 p, .test-2 p{
+     margin: 20px 0;
+  } 
+  
+  .profile{
+      display: flex;
+      margin: 10px 0; 
+  }
+  
+  .profile img{
+      width: 70px;
+      height: 70px;
+      margin: 0 20px 0 0px;
+      border-radius: 35px;
+  }
+  
+  .profile div{
+      margin-top: 20px;
+  }
+  
+  .profile p{
+      margin: 0 0 0 0;
+  }
+  
+  .contact{
+     border: 1px solid;
+     text-align: center;
+     height: 165vh;
+     color: white;
+     margin-top: 0px;
+     background-color: rgb(36, 36, 36);
+  }
+
+  .contact h1{
+    font-size: 2rem;
+  }
+  
+  .contact .network{
+      border: 1px solid;
+      display: flex;
+      width: 80%;
+      margin: 20px auto;
+  }
+  
+  .network div{
+      width: 50%;
+      margin: 0 auto;
+      height: 200px;
+      border: 1px solid;
+  }
+  
+  form{
+      border: 1px solid;
+      display: block;
+  }
+  
+  form input{
+      border: 1px solid;
+      margin: 0 10px;
+      width: 31%;
+      border-radius: 3px;
+      background-color: rgb(71, 71, 71);
+      padding: 10px 20px 10px 5px;
+  }
+  
+  textarea{
+      border: 1px solid;
+      width: 65%;
+      border-radius: 3px;
+      background-color: rgb(71, 70, 70);
+      height: 150px;
+      padding: 10px 0 0 0;
+  }
+  .submit{
+      border: 1px solid;
+  }
+  
+  
+  
+  .footer{
+    display: flex;
+    margin-top: 120px;
+    justify-content: space-between;
+    padding: 0px 30px;
+    border: 1px solid;
+    height: 70px;
+    background-color: rgb(61, 59, 59);   
+  }
+
+}
+
+
